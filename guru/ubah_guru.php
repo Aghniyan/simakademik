@@ -7,7 +7,6 @@ include('proses_guru.php');
 include('../_templates/head.php');
 $id = $_GET['id'];
 $guru = tampil_guru($id);
-var_dump($guru);
 if (isset($_POST['submit'])) {
   ubah_guru();
 }

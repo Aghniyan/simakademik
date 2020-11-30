@@ -10,25 +10,14 @@
   
   <hr class="sidebar-divider my-0">
   <li class="nav-item dropdown no-arrow">
-    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="nav-link" href="<?=base_url().'profil'?>" role="button" aria-haspopup="true" >
       <img class="img-profile rounded-circle" src="<?= base_url() ?>assets/img/boy.png" style="max-width: 60px">
       <span class="ml-2 d-none d-lg-inline  small"><?= $_SESSION['role'] ?></span>
     </a>
-    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-      <a class="dropdown-item" href="<?= base_url() . 'profil' ?>">
-        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-        Profile
-      </a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#logoutModal">
-        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-        Logout
-      </a>
-    </div>
   </li>
   <!-- <hr class="sidebar-divider"> -->
   <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="<?=base_url()?>">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Dashboard</span></a>
   </li>
